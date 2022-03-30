@@ -17,7 +17,7 @@ const makeSut = (url = 'http://iwooh.bv/wuv'): SutTypes => {
 
 describe('RemoteAuthentication', () => {
   it('should call HttpPostClient with correct URL', async () => {
-    const url = 'other_url'
+    const url = 'http://diwteren.sz/li'
     const { sut, httpPostClientSpy } = makeSut(url)
     await sut.auth()
     expect(httpPostClientSpy.url).toBe(url)
